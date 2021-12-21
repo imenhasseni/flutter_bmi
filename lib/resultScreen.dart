@@ -16,9 +16,11 @@ class _ResultScreenState extends State<ResultScreen> {
       backgroundColor: Color(0xFF2F2E3A),
       appBar: AppBar(
         backgroundColor: Color(0xFF24232F),
-        title: Text("BMI RESULT",style: TextStyle(
-          fontWeight: FontWeight.bold,
-            color: Colors.white
+        title: Text(
+          "BMI RESULT",
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white
         ),),
       ),
       body: Column(
@@ -41,10 +43,10 @@ class _ResultScreenState extends State<ResultScreen> {
           Expanded(
             flex: 5,
               child: Container(
-                margin: EdgeInsets.all(10.0),
+                margin: EdgeInsets.all(20.0),
                 padding: EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12.0),
+                    borderRadius: BorderRadius.circular(20.0),
                     color: Color(0xFF24232F),
                 ),
                 child: Column(
@@ -88,15 +90,18 @@ class _ResultScreenState extends State<ResultScreen> {
                   Navigator.pop(context);
                 },
                 child: Container(
-                  alignment: Alignment.center,
-                  padding: EdgeInsets.all(10.0),
+                  padding: EdgeInsets.only(bottom: 10.0),
+                  margin: EdgeInsets.only(top: 10.0),
+                  width: double.infinity,
+                  height: 80.0,
                   color: Colors.deepPurpleAccent,
-                  margin: EdgeInsets.only(bottom: 10.0),
-                  child: Text(
-                    "RECALCULATE",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 25.0
+                  child: Center(
+                    child: Text(
+                      "RECALCULATE",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25.0
+                      ),
                     ),
                   ),
 
